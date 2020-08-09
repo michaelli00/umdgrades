@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "668ab49456a47076b763932238bc226a",
+    "revision": "f92c537a245d7c307668b1327da2eb9e",
     "url": "/umdgrades/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/umdgrades/static/css/2.f3cffc9e.chunk.css"
   },
   {
-    "revision": "e04fad834c6e0c58f741",
+    "revision": "d8c049a98c8999620950",
     "url": "/umdgrades/static/css/main.27fd15f6.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/umdgrades/static/js/2.5c4c9b2f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e04fad834c6e0c58f741",
-    "url": "/umdgrades/static/js/main.a48b7908.chunk.js"
+    "revision": "d8c049a98c8999620950",
+    "url": "/umdgrades/static/js/main.44fc59a4.chunk.js"
   },
   {
     "revision": "7d7de868cf6146df1814",
