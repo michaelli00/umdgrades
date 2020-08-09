@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/umdgrades/static/css/main.27fd15f6.chunk.css",
+    "main.js": "/umdgrades/static/js/main.3c92b47e.chunk.js",
+    "main.js.map": "/umdgrades/static/js/main.3c92b47e.chunk.js.map",
+    "runtime-main.js": "/umdgrades/static/js/runtime-main.ea8f7532.js",
+    "runtime-main.js.map": "/umdgrades/static/js/runtime-main.ea8f7532.js.map",
+    "static/css/2.f3cffc9e.chunk.css": "/umdgrades/static/css/2.f3cffc9e.chunk.css",
+    "static/js/2.5c4c9b2f.chunk.js": "/umdgrades/static/js/2.5c4c9b2f.chunk.js",
+    "static/js/2.5c4c9b2f.chunk.js.map": "/umdgrades/static/js/2.5c4c9b2f.chunk.js.map",
+    "index.html": "/umdgrades/index.html",
+    "precache-manifest.d29cc80d2ec09fa5fc4343d1f5067fd4.js": "/umdgrades/precache-manifest.d29cc80d2ec09fa5fc4343d1f5067fd4.js",
+    "service-worker.js": "/umdgrades/service-worker.js",
+    "static/css/2.f3cffc9e.chunk.css.map": "/umdgrades/static/css/2.f3cffc9e.chunk.css.map",
+    "static/css/main.27fd15f6.chunk.css.map": "/umdgrades/static/css/main.27fd15f6.chunk.css.map",
+    "static/js/2.5c4c9b2f.chunk.js.LICENSE.txt": "/umdgrades/static/js/2.5c4c9b2f.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ea8f7532.js",
+    "static/css/2.f3cffc9e.chunk.css",
+    "static/js/2.5c4c9b2f.chunk.js",
+    "static/css/main.27fd15f6.chunk.css",
+    "static/js/main.3c92b47e.chunk.js"
+  ]
+}
