@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/umdgrades/precache-manifest.d29cc80d2ec09fa5fc4343d1f5067fd4.js"
+  "/umdgrades/precache-manifest.a72a8851f5019e6cb6f3ca53bcd39bfe.js"
 );
 
 self.addEventListener('message', (event) => {
