@@ -9,11 +9,9 @@ class App extends React.Component{
   constructor(props) {
     super(props);
     this.state = {
-      course: "",
-      professor: "",
-      semester: "",
       totalData: null,
       semesterData: null,
+      numStudents: 0,
     };
   }
 
@@ -36,27 +34,44 @@ class App extends React.Component{
 
   combineSectionData = (totalData, semester) => {
     const semesterData = totalData.filter(datum => datum.semester === semester);
+    let numStudents = 0;
     let combinedData = semesterData.reduce((a, x) => {
       a['A+'] += x['A+'];
+      numStudents += x['A+'];
       a['A'] += x['A'];
+      numStudents += x['A'];
       a['A-'] += x['A-'];
+      numStudents += x['A-'];
       a['B+'] += x['B+'];
+      numStudents += x['B+'];
       a['B'] += x['B'];
+      numStudents += x['B'];
       a['B-'] += x['B-'];
+      numStudents += x['B-'];
       a['C+'] += x['C+'];
+      numStudents += x['C+'];
       a['C'] += x['C'];
+      numStudents += x['C'];
       a['C-'] += x['C-'];
+      numStudents += x['C-'];
       a['D+'] += x['D+'];
+      numStudents += x['D+'];
       a['D'] += x['D'];
+      numStudents += x['D'];
       a['D-'] += x['D-'];
+      numStudents += x['D-'];
       a['F'] += x['F'];
+      numStudents += x['F'];
       a['W'] += x['W'];
+      numStudents += x['W'];
       a['Other'] += x['Other'];
+      numStudents += x['Other'];
       return a;
     }, new CourseSemesterData());
     combinedData['course'] = semesterData[0].course;
     combinedData['professor'] = semesterData[0].professor;
     combinedData['semester'] = semesterData[0].semester;
+    this.setState({numStudents});
     return combinedData;
   }
 
@@ -81,8 +96,8 @@ class App extends React.Component{
     return (
       <div>
         <Header/>
-        <Search searchCallBack={this.searchCallBack} course={this.state.course} professor={this.state.professor} semester={this.state.semester}/>
-        <Chart data={this.state.semesterData}/>
+        <Search searchCallBack={this.searchCallBack}/>
+        <Chart numStudents={this.state.numStudents} data={this.state.semesterData}/>
       </div>
     );
   }

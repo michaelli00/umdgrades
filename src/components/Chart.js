@@ -2,12 +2,12 @@ import React from 'react';
 import CanvasJSReact from '../assets/canvasjs.react';
 var CanvasJSChart = CanvasJSReact.CanvasJSChart;
 
-const Chart = ({ data }) => {
+const Chart = ({ numStudents, data }) => {
   let chartOptions;
   if(data) {
     chartOptions = {
-      title: {
-        text: `${data.course} ${data.professor} ${data.semester.match(/^\d+01$/) ? `Spring ${data.semester.substring(0, 4)}` : `Fall ${data.semester.substring(0,4)}`}`,
+      title: { 
+        text: `${data.course} ${data.professor} ${data.semester.match(/^\d+01$/) ? `Spring ${data.semester.substring(0, 4)}` : `Fall ${data.semester.substring(0,4)}`} (${numStudents} Students)`,
       },
       legend: {},
       data: [
